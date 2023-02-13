@@ -1,0 +1,21 @@
+.navbar {
+  background: white;
+}
+.nav-item {
+  font-family:'Courier New', Courier, monospace;
+  font-size: small;
+}
+
+@media (min-width: 768px)
+.navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.banner {
+  background-image: url("C:\Users\Mona\WebDev\xampp\htdocs\mini-project-1\mp1\1.png");
+  max-width: auto;
+  height: auto;
+  margin-top: 30px;
+  border: 2px;
+}
