@@ -1,30 +1,58 @@
+
 .navbar {
   background: white;
-}
-.nav-item {
-  font-family:'Courier New', Courier, monospace;
-  font-size: small;
+  height: 5w;
 }
 
-@media (min-width: 768px)
-.navbar-expand-md {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+.nav-item {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1vw;
+  padding-left: .1vw;
+}
+
+.button {
+  border-radius: 50%;
 }
 
 .form-control {
-  width: 300px;
-  min-height: auto;
+  width: 25vw;
+  min-height: 1.5vw;
   font-family:'Courier New', Courier, monospace;
-  font-size: small;
+  font-size: 1vw;
+}
+
+.menu {
+  background-color: white ;
+  height: 8vw;
 }
 
 .containerheader {
   background-image: url("mp1/green.png");
+  background-repeat: repeat-x;
+  align-content: center;
 }
+
 .banner {
   max-width: auto;
   height: auto;
-  margin-top: 30px;
+  margin-top: 2vw;
   border: 2px;
+  background-size:contain;
+  background-color: rgba(255,255,255,0.5)
+}
+
+.offcanvasitem {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 15px;
+  padding: .5vw;
+  text-align: center;
+}
+
+.offcanvasitemform {
+  width: 200px;
+  height: 6vw;
+  min-height: auto;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 15px;
+  text-align: center;
 }
