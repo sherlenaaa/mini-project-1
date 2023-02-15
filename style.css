@@ -12,8 +12,17 @@
     justify-content: flex-start;
 }
 
+.form-control {
+  width: 300px;
+  min-height: auto;
+  font-family:'Courier New', Courier, monospace;
+  font-size: small;
+}
+
+.containerheader {
+  background-image: url("C:\Users\Mona\WebDev\xampp\htdocs\mini-project-1\mp1\green.png");
+}
 .banner {
-  background-image: url("C:\Users\Mona\WebDev\xampp\htdocs\mini-project-1\mp1\1.png");
   max-width: auto;
   height: auto;
   margin-top: 30px;
