@@ -20,7 +20,7 @@
 }
 
 .containerheader {
-  background-image: url("C:\Users\Mona\WebDev\xampp\htdocs\mini-project-1\mp1\green.png");
+  background-image: url("mp1/green.png");
 }
 .banner {
   max-width: auto;
