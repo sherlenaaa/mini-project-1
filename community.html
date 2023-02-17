@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <!-- bootstrap css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+      <!-- navbar -->
+<nav class="navbar fixed-top">
+  <div class="container-fluid">
+  
+    <div class="d-md-none">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasmd" 
+        aria-controls="navbarOffcanvasmdLabel">
+        <img src="mp1\logo.png" class="menu">
+      </button>
+  </div>
+  <div class="d-none d-md-block">
+    <ul class="nav nav-tabs mx-2 pe-3">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Hello!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="whoami.html">Who Am I</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="whatshappening.html">What's Happening</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alternatives.html">What's the Alternative</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="community.html">Community</a>
+      </li>
+    </ul>
+    </div>
+    <div>
+    <div class="d-flex float-end">
+    <form class="me-3">
+      <input type="text" class="form-control" placeholder="Looking for something?">
+    </form>
+    <button type="button" class="btn btn-outline-light btn-sm"><img src=mp1/icons8-search-80.png class="buttons"></button>
+    </div>
+    </div>
+  <!-- offcanvas menu-->  
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasmd" aria-labelledby="navbarOffcanvasmdLabel">
+        <div class="d-flex justify-content-end">
+        <button type="button" class="btn-close mx-2 my-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvasitem"><img src="mp1/banner2.png" class="img-fluid"></div>
+        <br>
+        <ul class="nav nav-pills flex-column text-center">
+        <li> <a class="nav-link" href="index.html">Hello!</a></li>
+        <li> <a class="nav-link" href="whoami.html">Who Am I</a></li>
+        <li> <a class="nav-link" href="whatshappening.html">What's Happening</a></li>
+        <li> <a class="nav-link" href="alternatives.html">What's the Alternative</a></li>
+        <li> <a class="nav-link active" href="community.html">Community</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+          <div class="container text-center">
+            <form class="offcanvasitem">
+                <h2><strong>Join our community</strong></h2>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-light" type="button">Subscribe</button>
+                </div>
+              </form>
+          </div>
+          <div class="container">
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
+              <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
+              <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
+              <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</nav>
+
+
+      <!-- header -->
+  <div class="containerheader">
+    <div class="container-fluid text-center"> 
+      <div class="d-none d-md-block"><img src="mp1/banner.png" class="banner"></div>
+    </div>
+  </div>
+      <!-- content -->
+      
+   
+      <!-- Footer -->
+<footer class="footer">
+<div class="container d-none d-md-block">
+<div class="row py-3">
+<div class="col text-center align-items-center">
+  <img src="mp1/footer.png" alt="logo" class="footerlogo">
+</div>
+<div class="col">
+  <form>
+    <h3><strong>Join our community</strong> </h3>
+    <p>Monthly digest of what's new and exciting from us.</p>
+    <div class="d-flex gap-2">
+      <label for="newsletter1" class="visually-hidden">Email address</label>
+      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+      <button class="btn btn-light btn-sm" type="button">Subscribe</button>
+    </div>
+  </form>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+  <ul class="list-unstyled d-flex pt-2 justify-content-center">
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+  </ul>
+<div class="d-flex justify-content-center py-2 border-top">
+  <p class="text-center">© Just Mona 2023 All rights reserved.</p>
+</div>
+</div>
+</footer>
+  
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
