@@ -1,13 +1,30 @@
-
 .navbar {
   background: white;
   height: 5w;
 }
 
-.nav-item {
+.nav-pills .nav-link {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 15px;
+  padding: .5vw;
+  color: #43464b;
+}
+
+.nav-pills .nav-link.active {
+  color:white;
+  background-color: #4b5320;
+}
+
+.nav-tabs .nav-link{
   font-family:'Courier New', Courier, monospace;
   font-size: 1vw;
-  padding-left: .1vw;
+  margin: .1vw;
+  color: #43464b;
+}
+
+.nav-tabs .nav-link.active {
+  color:white;
+  background-color: #4b5320;
 }
 
 .button {
@@ -21,15 +38,37 @@
   font-size: 1vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .form-control {
+    width: 50vw;
+    min-height: 8vw;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2vw;
+  }
+}
+
+.buttons {
+  height: 1.7vw;
+  width: 1.7vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .buttons {
+    height: 3vw;
+    width: 3vw;
+
+  }
+}
+
 .menu {
   background-color: white ;
   height: 8vw;
 }
 
 .containerheader {
-  background-image: url("mp1/green.png");
-  background-repeat: repeat-x;
+  background-image: url("mp1/orange.png");
   align-content: center;
+  
 }
 
 .banner {
@@ -38,21 +77,31 @@
   margin-top: 2vw;
   border: 2px;
   background-size:contain;
-  background-color: rgba(255,255,255,0.5)
+  background-color: rgba(255, 255, 255, 0.753)
+  
 }
 
 .offcanvasitem {
   font-family:'Courier New', Courier, monospace;
-  font-size: 15px;
-  padding: .5vw;
+  font-size: 10px;
   text-align: center;
 }
 
-.offcanvasitemform {
-  width: 200px;
-  height: 6vw;
-  min-height: auto;
-  font-family:'Courier New', Courier, monospace;
-  font-size: 15px;
-  text-align: center;
+.icons {
+  height: 4vw;
+  width: 4vw; 
+  color:azure;
+}
+
+.footer {
+  background-color: #7b3f00;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1vw;
+  color: white;;
+  padding-top: 3px;
+}
+
+.footerlogo {
+  height: 10vw;
+  width:auto;
 }
