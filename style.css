@@ -131,26 +131,64 @@
   border: 2px;
   border-color: aliceblue;
   margin: 2px;
+  margin-bottom: 2px;
 }
 
 /* Who Am I */
 
 .profilepic {
+  height:25vw;
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .profilepic {
+    height:auto;
+    width: 50vw;
+    padding-top: 12vw;
+  }
+}
+.title {
   height: 30vw;
-  width: 30vw;
-  border-radius: 50%;
+  align-items: center;
+  margin-left: 5px;
 }
 
-.aboutmeone {
-  width:10vw;
+@media only screen and (max-width: 768px) {
+.title {
   height: auto;
-  float:left;
-  background-color: #4b5320;
+  width:100vw;
+  margin-top: 5px;
+  align-self: center;
+}
 }
 
-.aboutmetwo {
-  width:90vw;
-  height: auto;
+.aboutme {
   font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
 }
 
+.mission {
+  width: 40vw;
+  height:auto;
+  margin: 2px;
+}
+
+.flexlist {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  color: black;
+  padding: 5px;
+}
+
+.emphasize {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+
+}
