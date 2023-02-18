@@ -13,16 +13,13 @@
 <body>
       <!-- navbar -->
 <nav class="navbar fixed-top">
-  <div class="container-fluid">
-  
+  <div class="container-fluid ">
     <div class="d-md-none">
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasmd" 
-        aria-controls="navbarOffcanvasmdLabel">
-        <img src="mp1\logo.png" class="menu">
-      </button>
-  </div>
+        <img src="mp1\logo.png" class="menu" data-bs-toggle="offcanvas" role="button" data-bs-target="#navbarOffcanvas">
+    </div>
   <div class="d-none d-md-block">
     <ul class="nav nav-tabs mx-2 pe-3">
+    <!--Page active links-->
       <li class="nav-item">
         <a class="nav-link" href="index.html">Hello!</a>
       </li>
@@ -45,16 +42,25 @@
     <form class="me-3">
       <input type="text" class="form-control" placeholder="Looking for something?">
     </form>
-    <button type="button" class="btn btn-outline-light btn-sm"><img src=mp1/icons8-search-80.png class="buttons"></button>
+    <button type="button" class="btn btn-light btn-sm"><img src=mp1/icons8-search-80.png class="buttons"></button>
     </div>
     </div>
   <!-- offcanvas menu-->  
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasmd" aria-labelledby="navbarOffcanvasmdLabel">
-        <div class="d-flex justify-content-end">
-        <button type="button" class="btn-close mx-2 my-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+        <div class="container">
+          <div class="row justify-content-end">
+        <button type="button" class="btn-close mx-2 my-2" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvasitem"><img src="mp1/banner2.png" class="img-fluid"></div>
+        <div class="row">
+          <img src="mp1/banner2.png" class="img-fluid">
+        </div>
+        </div>
+        </div>
+
+        <div class="offcanvas-body justify-content-center" id="offcanvasitem">
         <br>
+      <!--Page active links-->
         <ul class="nav nav-pills flex-column text-center">
         <li> <a class="nav-link" href="index.html">Hello!</a></li>
         <li> <a class="nav-link" href="whoami.html">Who Am I</a></li>
@@ -64,8 +70,7 @@
         </ul>
         <br>
         <br>
-        <br>
-          <div class="container text-center">
+        <div class="container text-center">
             <form class="offcanvasitem">
                 <h2><strong>Join our community</strong></h2>
                 <p>Monthly digest of what's new and exciting from us.</p>
@@ -74,29 +79,175 @@
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                   <button class="btn btn-light" type="button">Subscribe</button>
                 </div>
-              </form>
-          </div>
-          <div class="container">
+            </form>
+        </div>
+        <br>
+        <div class="container">
             <ul class="list-unstyled d-flex justify-content-center">
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-facebook-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-instagram-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-twitter-squared-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-tiktok-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-youtube-64-dark.png class="icons"></a></li>
             </ul>
-          </div>
+        </div>
         </div>
       </div>
+  </div>
 </nav>
 
 
       <!-- header -->
-  <div class="containerheader">
+  <div class="homeheader">
     <div class="container-fluid text-center"> 
       <div class="d-none d-md-block"><img src="mp1/banner.png" class="banner"></div>
     </div>
   </div>
       <!-- content -->
-      
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
    
       <!-- Footer -->
 <footer class="footer">
@@ -106,9 +257,10 @@
   <img src="mp1/footer.png" alt="logo" class="footerlogo">
 </div>
 <div class="col">
-  <form>
+  
     <h3><strong>Join our community</strong> </h3>
     <p>Monthly digest of what's new and exciting from us.</p>
+    <form>
     <div class="d-flex gap-2">
       <label for="newsletter1" class="visually-hidden">Email address</label>
       <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -122,8 +274,9 @@
   <ul class="list-unstyled d-flex pt-2 justify-content-center">
     <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
     <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
-    <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-twitter-squared-64.png class="icons"></a></li>
     <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
   </ul>
 <div class="d-flex justify-content-center py-2 border-top">
   <p class="text-center">© Just Mona 2023 All rights reserved.</p>

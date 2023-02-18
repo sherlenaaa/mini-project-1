@@ -13,16 +13,13 @@
 <body>
       <!-- navbar -->
 <nav class="navbar fixed-top">
-  <div class="container-fluid">
-  
+  <div class="container-fluid ">
     <div class="d-md-none">
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasmd" 
-        aria-controls="navbarOffcanvasmdLabel">
-        <img src="mp1\logo.png" class="menu">
-      </button>
-  </div>
+        <img src="mp1\logo.png" class="menu" data-bs-toggle="offcanvas" role="button" data-bs-target="#navbarOffcanvas">
+    </div>
   <div class="d-none d-md-block">
     <ul class="nav nav-tabs mx-2 pe-3">
+    <!--Page active links-->
       <li class="nav-item">
         <a class="nav-link" href="index.html">Hello!</a>
       </li>
@@ -45,16 +42,25 @@
     <form class="me-3">
       <input type="text" class="form-control" placeholder="Looking for something?">
     </form>
-    <button type="button" class="btn btn-outline-light btn-sm"><img src=mp1/icons8-search-80.png class="buttons"></button>
+    <button type="button" class="btn btn-light btn-sm"><img src=mp1/icons8-search-80.png class="buttons"></button>
     </div>
     </div>
   <!-- offcanvas menu-->  
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasmd" aria-labelledby="navbarOffcanvasmdLabel">
-        <div class="d-flex justify-content-end">
-        <button type="button" class="btn-close mx-2 my-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="navbarOffcanvas">
+        <div class="offcanvas-header">
+        <div class="container">
+          <div class="row justify-content-end">
+        <button type="button" class="btn-close mx-2 my-2" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvasitem"><img src="mp1/banner2.png" class="img-fluid"></div>
+        <div class="row">
+          <img src="mp1/banner2.png" class="img-fluid">
+        </div>
+        </div>
+        </div>
+
+        <div class="offcanvas-body justify-content-center" id="offcanvasitem">
         <br>
+      <!--Page active links-->
         <ul class="nav nav-pills flex-column text-center">
         <li> <a class="nav-link" href="index.html">Hello!</a></li>
         <li> <a class="nav-link active" href="whoami.html">Who Am I</a></li>
@@ -64,8 +70,7 @@
         </ul>
         <br>
         <br>
-        <br>
-          <div class="container text-center">
+        <div class="container text-center">
             <form class="offcanvasitem">
                 <h2><strong>Join our community</strong></h2>
                 <p>Monthly digest of what's new and exciting from us.</p>
@@ -74,103 +79,61 @@
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
                   <button class="btn btn-light" type="button">Subscribe</button>
                 </div>
-              </form>
-          </div>
-          <div class="container">
+            </form>
+        </div>
+        <br>
+        <div class="container">
             <ul class="list-unstyled d-flex justify-content-center">
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
-              <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-facebook-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-instagram-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-twitter-squared-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-tiktok-64-dark.png class="icons"></a></li>
+              <li><a href="#"><img src=mp1/icons8-youtube-64-dark.png class="icons"></a></li>
             </ul>
-          </div>
+        </div>
         </div>
       </div>
+  </div>
 </nav>
 
-<!-- header -->
-    <div class="container-fluid text-center"> 
-      <div class="d-none d-md-block"><img src="mp1/banner2.png" class="header">
-    </div>
+
+      <!-- header -->
+<div class="container-fluid text-center"> 
+  <div class="d-none d-md-block"><img src="mp1/banner2.png" class="header">
+</div>
   
       <!-- content -->
 <div class="container-fluid">
-  <div class="d-none d-sm-block">
-    <div class="d-flex justify-content-around">
-      <div class="content flex-fill">About Me</div>
-      <div class="content flex-fill">My choices</div>
-      <div class="content flex-fill">Mission</div>
-      <div class="content flex-fill">Vission</div>
-    </div> 
-  </div>
-  <hr class="d-none d-md-block">
-  <div class="container" style="margin-top:5vw">
-    <div class="row py-2 mx-2">
-      <div class="col-sm-2" style="font-family: 'Courier New', Courier, monospace; text-align: center; margin-top:5px; background-color: #4b5320; color: white; text-align: center;">
-        <div class="d-flex d-none d-sm-block">
-        <h1 style="writing-mode: vertical-rl;"><strong>About Me</strong></h1>
-        </div>
-        <div class="d-flex d-sm-none">
-          <h1 class="mt-4"><strong> About Me</strong></h1>
-        </div>
-      </div>
-      <div class="col-10">
-      <div class="row row-cols-1 row-cols-md-2">
-      <div class="col-sm-4">
-        <img src="whoami/me.jpg" alt="Sherlene Manguerra" class="profilepic">
-      </div>
-      <div class="col-sm-8">
-        <p class="writtings"><strong>Name:</strong> Sherlene Manguerra</p>
-        <p class="writtings"><strong>Nickname:</strong> Shie / She-she / Mona</p>
-        <p class="writtings"><strong>Zodiac Sign:</strong> Saggitarious</p>
-        <p class="writtings"><strong>Likes:</strong> Good food, good drinks, peaceful place, and thoughtful people.</p>
-        <p class="writtings"><strong>Dislikes:</strong> Spicy food, dust, and insects that can enter your body.</p>
-      </div>
-      </div>
-      </div>
+   <div class="d-none d-sm-block">
+      <div class="d-flex justify-content-around">
+        <div class="content flex-fill">About Me</div>
+        <div class="content flex-fill">My choices</div>
+        <div class="content flex-fill">Mission</div>
+        <div class="content flex-fill">Vission</div>
+      </div> 
     </div>
-  </div>
 </div>
 
-<div class="container-fluid" style="background-image: url(mp1/orange.png);">
-  <div class="row" style="font-family:'Courier New', Courier, monospace; font-size: large; color: black; background-color:rgba(255, 255, 255, 0.3) ;">
-    <div class="col">
-        <h2><strong>Mission</strong></h2>
-        <hr>
-        <p style="font-family:'Courier New', Courier, monospace; font-size: medium; color: black"> To spread awareness of the existing condition of solid waste in our country, find a preventive action, spread the idea and document my action.</p>
-    </div>
-    <div class="col">
-      <h2><strong>Vission</strong></h2>
-      <hr>
-      <p style="font-family:'Courier New', Courier, monospace; font-size: medium; color: black">To influence one person at a time, one neighbour at time, one community at a time.</p>
-    </div>
+       <!--main-->
+<div class="container-fluid">
+  <div class="aboutmeone">
+    <p> About Me </p>
   </div>
-</div>
-
-<div class="container-fluid" style="padding: 10px;">
-<div class="container">
-<div class="col-10">
-  <p style="font-family: 'Courier New', Courier, monospace; font-size: medium; color: black; justify-content: center;">
-    Since I started making my own salary, I tried to be a responsible consumer. Here are some of the choices I tried to make religiously:
-    <br>
-    1.	Avoid online shopping<br>
-    2.	Always bring water bottle anywhere<br>
-    3.	Consume refillable products<br>
-    4.	Use Shampoo bars<br>
-    5.	Use Menstrual cup<br>
-    6.	Pick Glass vs plastics<br>
-    7.	Have your own reusable straw<br>
-    8.	Support businesses that use less plastics<br>
-    9.	Buy/Save and re-use ecobag and plastics from supermarket.<br>
-    10.	Avoid product using single-use-plastics<br>
-    12.	Buy bulk order for lesser packaging waste produce.
-    </p>
-  </div>
-  <div class="col-2" style="font-family: 'Courier New', Courier, monospace; text-align: center; margin-top:5px; background-color: #4b5320; color: white; text-align: center;">
-      <div class="d-flex d-none d-sm-block">
-      <h1 style="writing-mode: vertical-lr;"><strong>Choices I made</strong></h1>
+  <div class="aboutmetwo">
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col-sm-4">
+         <img src="whoami/me.jpg" alt="Sherlene Manguerra" class="profilepic">
+        </div>
+        <div class="col-sm-8">
+         <p><strong>Name:</strong> Sherlene Manguerra</p>
+         <p><strong>Nickname:</strong> Shie / She-she / Mona</p>
+         <p><strong>Zodiac Sign:</strong> Saggitarious</p>
+         <p><strong>Likes:</strong> Good food, good drinks, peaceful place, and thoughtful people.</p>
+         <p><strong>Dislikes:</strong> Spicy food, dust, and insects that can enter your body.</p>
+        </div>
       </div>
-  </div>
+    </div>
   </div>
 </div>
 
@@ -184,9 +147,10 @@
   <img src="mp1/footer.png" alt="logo" class="footerlogo">
 </div>
 <div class="col">
-  <form>
+  
     <h3><strong>Join our community</strong> </h3>
     <p>Monthly digest of what's new and exciting from us.</p>
+    <form>
     <div class="d-flex gap-2">
       <label for="newsletter1" class="visually-hidden">Email address</label>
       <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -200,8 +164,9 @@
   <ul class="list-unstyled d-flex pt-2 justify-content-center">
     <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
     <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
-    <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-twitter-squared-64.png class="icons"></a></li>
     <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+    <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
   </ul>
 <div class="d-flex justify-content-center py-2 border-top">
   <p class="text-center">© Just Mona 2023 All rights reserved.</p>
