@@ -92,7 +92,7 @@
 
 .header {
   max-width: auto;
-  height: 7vw;
+  height: 10vw;
   margin-top: 5vw;
   
 }
@@ -122,6 +122,20 @@
   width:auto;
 }
 
+.modal-title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+  color: black;
+  text-align: center;
+}
+
+.modal-body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-style: oblique;
+  color: black;
+}
+
 .content {
   font-family: 'Courier New', Courier, monospace;
   font-size: medium;
@@ -139,6 +153,7 @@
 .profilepic {
   height:25vw;
   width: auto;
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,25 +185,36 @@
   font-size: 15px;
   text-align: center;
   background-color: white;
+  padding: 5px;
 }
 
 .mission {
   width: 40vw;
   height:auto;
   margin: 2px;
+  border-radius: 5%;
 }
 
 .flexlist {
   font-family: 'Courier New', Courier, monospace;
   font-size: 15px;
+  font-weight: bold;
   color: black;
   padding: 5px;
 }
 
 .emphasize {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
-  font-weight: bold;
-
+  font-weight:bolder;
 }
+
+#mandm {
+  background-image: url(mp1/oranges.png);
+  max-width: max-content;
+  height: auto;
+  align-items: center;
+  padding: 20px;
+}
+/* Alternative */

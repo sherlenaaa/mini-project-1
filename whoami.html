@@ -27,9 +27,6 @@
         <a class="nav-link active" href="whoami.html">Who Am I</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="whatshappening.html">What's Happening</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="alternatives.html">What's the Alternative</a>
       </li>
       <li class="nav-item">
@@ -57,14 +54,12 @@
         </div>
         </div>
         </div>
-
         <div class="offcanvas-body justify-content-center" id="offcanvasitem">
         <br>
       <!--Page active links-->
         <ul class="nav nav-pills flex-column text-center">
         <li> <a class="nav-link" href="index.html">Hello!</a></li>
         <li> <a class="nav-link active" href="whoami.html">Who Am I</a></li>
-        <li> <a class="nav-link" href="whatshappening.html">What's Happening</a></li>
         <li> <a class="nav-link" href="alternatives.html">What's the Alternative</a></li>
         <li> <a class="nav-link" href="community.html">Community</a></li>
         </ul>
@@ -77,7 +72,23 @@
                 <div class="d-flex gap-2">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-light" type="button">Subscribe</button>
+                  <button class="btn btn-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
+                    <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title" id="subscribeModalLabel">Welcome!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Thank you for choosing to be a part of this community.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </form>
         </div>
@@ -96,25 +107,13 @@
   </div>
 </nav>
 
-
       <!-- header -->
 <div class="container-fluid text-center"> 
   <div class="d-none d-md-block"><img src="mp1/banner2.png" class="header">
 </div>
   
       <!-- content -->
-<div class="container-fluid">
-   <div class="d-none d-sm-block">
-      <div class="d-flex justify-content-around">
-        <div class="content flex-fill">About Me</div>
-        <div class="content flex-fill">My choices</div>
-        <div class="content flex-fill">Mission</div>
-        <div class="content flex-fill">Vission</div>
-      </div> 
-    </div>
-</div>
-
-       <!--main-->
+<hr>
 <div class="container-fluid pt-5vw">
 <div class="row ">
   <div class="col-md-2">
@@ -134,7 +133,7 @@
 
 <hr>
 
-<div class="container-fluid" style="background-image: url(mp1/orange.png);">
+<div class="container-fluid" id="mandm">
   <div class="row">
     <div class="col"> 
       <img src="whoami/mission.png" class="mission"> 
@@ -155,7 +154,7 @@
   <img src="whoami/choices.png" class="img-fluid" style="height:10vw">
   <div class="d-flex flex-column">
     <div class="flexlist">  Never leaving the house without <font class=emphasize>WATER BOTTLE</font> </div>
-    <div class="flexlist">  Consume/use items that are available for <font class=emphasize>REFILL/REFILABLE</font>near you.</div>
+    <div class="flexlist">  Consume/use items that are available for <font class=emphasize>REFILL/REFILABLE</font> near you.</div>
     <div class="flexlist">  Switching to <font class=emphasize>SHAMPOO & CONDITIONER BAR</font>. </div>
     <div class="flexlist">  Switching to <font class=emphasize>MENSTRUAL CUP</font>. </div>
     <div class="flexlist">  Choosing to buy  <font class=emphasize> GLASS CONTAINERS</font> over plastic ones.</div>
@@ -167,13 +166,7 @@
     <div class="flexlist">  Avoiding <font class=emphasize>ONLINE SHOPPING</font> at all cost.</div>
   </div>
 </div>
-      
-    
-
-
-
-    
-   
+<hr>
       <!-- Footer -->
 <footer class="footer">
 <div class="container d-none d-md-block">
@@ -189,7 +182,21 @@
     <div class="d-flex gap-2">
       <label for="newsletter1" class="visually-hidden">Email address</label>
       <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-      <button class="btn btn-light btn-sm" type="button">Subscribe</button>
+      <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="subscribeModalLabel">Welcome!</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Thank you for choosing to be a part of this community.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
     </div>
   </form>
 </div>
