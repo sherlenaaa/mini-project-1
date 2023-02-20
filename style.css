@@ -97,6 +97,15 @@
   
 }
 
+@media only screen and (max-width: 768px) {
+  .header {
+    max-width: auto;
+    height: 15vw;
+    margin-top: 13vw;
+    
+  }
+}
+
 .offcanvasitem {
   font-family:'Courier New', Courier, monospace;
   font-size: 10px;
