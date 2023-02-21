@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justmona.hello</title>
+       <!-- bootstrap css -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar fixed-top">
+    <div class="container-fluid ">
+      <div class="d-md-none">
+          <img src="mp1\logo.png" class="menu" data-bs-toggle="offcanvas" role="button" data-bs-target="#navbarOffcanvas">
+      </div>
+    <div class="d-none d-md-block">
+      <ul class="nav nav-tabs mx-2 pe-3">
+      <!--Page active links-->
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Hello!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="whoami.html">Who Am I</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="alternatives.html">What's the Alternative</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="community.html">Community</a>
+        </li>
+      </ul>
+      </div>
+      <div>
+      <div class="d-flex float-end">
+      <form class="me-3">
+        <input type="text" class="form-control" placeholder="Looking for something?">
+      </form>
+      <button type="button" class="btn btn-light btn-sm"><img src=mp1/icons8-search-80.png class="buttons"></button>
+      </div>
+      </div>
+    <!-- offcanvas menu-->  
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="navbarOffcanvas">
+          <div class="offcanvas-header">
+          <div class="container">
+            <div class="row justify-content-end">
+          <button type="button" class="btn-close mx-2 my-2" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="row">
+            <img src="mp1/banner2.png" class="img-fluid">
+          </div>
+          </div>
+          </div>
+  
+    <div class="offcanvas-body justify-content-center" id="offcanvasitem">
+          <br>
+        <!--Page active links-->
+          <ul class="nav nav-pills flex-column text-center">
+          <li> <a class="nav-link active" href="index.html">Hello!</a></li>
+          <li> <a class="nav-link" href="whoami.html">Who Am I</a></li>
+          <li> <a class="nav-link" href="alternatives.html">What's the Alternative</a></li>
+          <li> <a class="nav-link" href="community.html">Community</a></li>
+          </ul>
+          <br>
+          <br>
+          <div class="container text-center">
+              <form class="offcanvasitem">
+                  <h2><strong>Join our community</strong></h2>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
+                      <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title" id="subscribeModalLabel">Welcome!</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Thank you for choosing to be a part of this community.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              </form>
+          </div>
+          <br>
+          <div class="container">
+              <ul class="list-unstyled d-flex justify-content-center">
+                <li><a href="#"><img src=mp1/icons8-facebook-64-dark.png class="icons"></a></li>
+                <li><a href="#"><img src=mp1/icons8-instagram-64-dark.png class="icons"></a></li>
+                <li><a href="#"><img src=mp1/icons8-twitter-squared-64-dark.png class="icons"></a></li>
+                <li><a href="#"><img src=mp1/icons8-tiktok-64-dark.png class="icons"></a></li>
+                <li><a href="#"><img src=mp1/icons8-youtube-64-dark.png class="icons"></a></li>
+              </ul>
+          </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+  
+  
+        <!-- header -->
+  <div class="homeheader">
+    <div class="container-fluid text-center"> 
+      <div class="d-none d-md-block"><img src="mp1/logo.png" class="banner"></div>
+    </div>
+  </div>
+  <hr>
+  
+        <!-- cover -->
+  <div class="container-fluid text-center"><blockquote><p style="font-family: 'Courier New', Courier, monospace;font-weight: bolder;">I don't want to survive! I want to live!</p>
+    <footer class="blockquote-footer">Captain B. Mcrea (The Captain) <cite title="Wall-E">Wall-E</cite></footer></blockquote>
+  </div>
+  <hr>
+        <div class="container-fluid text-center" >
+          <div class="row" style="padding: 0; margin:0">
+            <div class="col-6 col-md-3" style="padding:0; margin:0">
+              <div class="accordion accordion-flush" id="accordionFlushoneByone">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingOne">
+                  <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneByone" aria-expanded="false" aria-controls="flush-oneByone">
+                      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                          </div>
+                        </div>
+                      </div> 
+                    </a>
+                  </div>
+                    <div id="flush-oneByone" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushoneByone">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-6 col-md-3" style="padding:0; margin:0">
+              <div class="accordion accordion-flush" id="accordionFlushoneBytwo">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingTwo">
+                  <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneBytwo" aria-expanded="false" aria-controls="flush-oneBytwo">
+                      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                          </div>
+                        </div>
+                      </div> 
+                    </a>
+                    </div>
+                    <div id="flush-oneBytwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushoneBytwo">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-6 col-md-3" style="padding:0; margin:0">
+              <div class="accordion accordion-flush" id="accordionFlushoneBythree">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingThree">
+                  <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneBythree" aria-expanded="false" aria-controls="flush-oneBythree">
+                      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                          </div>
+                        </div>
+                      </div> 
+                    </a>
+                    <div id="flush-oneBythree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushoneBythree">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+            <div class="col-6 col-md-3" style="padding:0; margin:0">
+              <div class="accordion accordion-flush" id="accordionFlushoneByFour">
+                <div class="accordion-item">
+                  <div class="accordion-header" id="flush-headingFour">
+                  <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneByFour" aria-expanded="false" aria-controls="flush-oneBythree">
+                      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                          </div>
+                        </div>
+                      </div> 
+                    </a>
+                    <div id="flush-oneByFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushoneByFour">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+  
+            <div class="row" style="padding: 0; margin:0">
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushtwoByone">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingOne">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-twoByone" aria-expanded="false" aria-controls="flush-twoByone">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                    </div>
+                      <div id="flush-twoByone" class="accordion-collapse collapse" aria-labelledby="flush-headingOnetwo" data-bs-parent="#accordionFlushtwoByone">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushoneBytwo">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingTwo">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneBytwo" aria-expanded="false" aria-controls="flush-oneBytwo">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                      </div>
+                      <div id="flush-oneBytwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushoneBytwo">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushoneBythree">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingThree">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneBythree" aria-expanded="false" aria-controls="flush-oneBythree">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                      <div id="flush-oneBythree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushoneByFour">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingFour">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneByFour" aria-expanded="false" aria-controls="flush-oneBythree">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                      <div id="flush-oneByFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row" style="padding: 0; margin:0">
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushtwoByone">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingOne">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-twoByone" aria-expanded="false" aria-controls="flush-twoByone">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                    </div>
+                      <div id="flush-twoByone" class="accordion-collapse collapse" aria-labelledby="flush-headingOnetwo" data-bs-parent="#accordionFlushtwoByone">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushoneBytwo">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingTwo">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneBytwo" aria-expanded="false" aria-controls="flush-oneBytwo">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                      </div>
+                      <div id="flush-oneBytwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushoneBytwo">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushoneBythree">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingThree">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneBythree" aria-expanded="false" aria-controls="flush-oneBythree">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                      <div id="flush-oneBythree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+              <div class="col-6 col-md-3" style="padding:0; margin:0">
+                <div class="accordion accordion-flush" id="accordionFlushoneByFour">
+                  <div class="accordion-item">
+                    <div class="accordion-header" id="flush-headingFour">
+                    <a class="accordion collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#flush-oneByFour" aria-expanded="false" aria-controls="flush-oneBythree">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                            </div>
+                          </div>
+                        </div> 
+                      </a>
+                      <div id="flush-oneByFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+  
+        </div>
+      
+        <div class="container-fluid" style="background-image: url(mp1/oranges.png); height:200px; width: auto;">&nbsp;</div>  
+        
+        
+           
+        <!-- Footer -->
+  <footer class="footer">
+  <div class="container d-none d-md-block">
+  <div class="row py-3">
+  <div class="col text-center align-items-center">
+    <img src="mp1/footer.png" alt="logo" class="footerlogo">
+  </div>
+  <div class="col">
+    
+      <h3><strong>Join our community</strong> </h3>
+      <p>Monthly digest of what's new and exciting from us.</p>
+      <form>
+      <div class="d-flex gap-2">
+        <label for="newsletter1" class="visually-hidden">Email address</label>
+        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+        <button class="btn btn-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
+        <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title" id="subscribeModalLabel">Welcome!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Thank you for choosing to be a part of this community.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <ul class="list-unstyled d-flex pt-2 justify-content-center">
+      <li><a class="link-dark" href="#"><img src=mp1/icons8-facebook-64.png class="icons"></a></li>
+      <li><a class="link-dark" href="#"><img src=mp1/icons8-instagram-64.png class="icons"></a></li>
+      <li><a class="link-dark" href="#"><img src=mp1/icons8-twitter-squared-64.png class="icons"></a></li>
+      <li><a class="link-dark" href="#"><img src=mp1/icons8-tiktok-64.png class="icons"></a></li>
+      <li><a class="link-dark" href="#"><img src=mp1/icons8-youtube-64.png class="icons"></a></li>
+    </ul>
+  <div class="d-flex justify-content-center py-2 border-top">
+    <p class="text-center">© Just Mona 2023 All rights reserved.</p>
+  </div>
+  </div>
+  </footer>
+    
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

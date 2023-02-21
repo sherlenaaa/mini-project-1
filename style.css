@@ -73,17 +73,9 @@
   }
 }
 
-
-
-.homeheader {
-  background-image: url("mp1/orange.png");
-  align-content: center;
-  
-}
-
 .banner {
   max-width: auto;
-  height: auto;
+  height: 200px;
   margin-top: 5vw;
   border: 2px;
   background-size:contain;
@@ -157,6 +149,42 @@
   margin-bottom: 2px;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.quote {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
+.blockquote-footer {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.coverslide {
+  width: auto;
+  height: 100vh;
+}
+
+.proceed {
+  height: 8vw;
+  width: auto;
+  border-radius: 50%;
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 /* Who Am I */
 
 .profilepic {
@@ -227,3 +255,40 @@
   padding: 20px;
 }
 /* Alternative */
+.card-header {
+  border-color: #A64510 ;
+  border: 2px;;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+  background-color: #F9F7F1;
+ }
+ .card-body {
+  background-color: #F9F7F1;
+ }
+
+ .accordion-button {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  border-color: #A64510 ;
+  background-color: whitesmoke ;
+ }
+
+ .accordion-body {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  border-color: #889268 ;
+ 
+ }
+
+ .store {
+  width:2vw;
+  height: 2vw;
+ }

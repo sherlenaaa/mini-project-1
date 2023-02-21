@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alternative</title>
        <!-- bootstrap css -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -21,7 +21,7 @@
     <ul class="nav nav-tabs mx-2 pe-3">
     <!--Page active links-->
       <li class="nav-item">
-        <a class="nav-link" href="index.html">Hello!</a>
+        <a class="nav-link" href="home.html">Hello!</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="whoami.html">Who Am I</a>
@@ -59,7 +59,7 @@
         <br>
       <!--Page active links-->
         <ul class="nav nav-pills flex-column text-center">
-        <li> <a class="nav-link" href="index.html">Hello!</a></li>
+        <li> <a class="nav-link" href="home.html">Hello!</a></li>
         <li> <a class="nav-link" href="whoami.html">Who Am I</a></li>
         <li> <a class="nav-link active" href="alternatives.html">What's the Alternative</a></li>
         <li> <a class="nav-link" href="community.html">Community</a></li>
@@ -73,7 +73,6 @@
                 <div class="d-flex gap-2">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
                   <button class="btn btn-light btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
                     <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
@@ -110,32 +109,40 @@
 </nav>
 
       <!-- header -->
-<div class="container-fluid text-center"> 
+<div class="d-block text-center"> 
   <div><img src="mp1/earth.png" class="header">
 </div>
 </div>
 
 <!-- content -->
 <div class="container-fluid">
-  <div class="d-none d-sm-block">
-     <div class="d-flex justify-content-around">
-       <div class="content flex-fill">Personal Item</div>
-       <div class="content flex-fill">Hygiene</div>
-       <div class="content flex-fill">Baby & Her</div>
-       <div class="content flex-fill">Cleaning</div>
+  <div class="d-none d-md-block">
+     <div class="d-flex justify-content-around navbar" id="scrollspy">
+       <div class="content flex-fill"><a href="#personal">Personal Item</a></div>
+       <div class="content flex-fill"><a href="#hygiene">Hygiene</a></div>
+       <div class="content flex-fill"><a href="#herb">Baby & Her</a></div>
+       <div class="content flex-fill"><a href="#cleaning">Cleaning</a></div>
+       <div class="content flex-fill"><a href="#other">Other</a></div>
      </div> 
    </div>
 </div>
 
-<div class="accordion-body">
-  <div class="container">
-    <div class="row" style="justify-content: center; padding: 10px ;">
-      <div class="col-6 col-md-3">
+<div class="d-none d-md-block">
+  <div class="container" data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" style="height: 1320px; overflow-y: scroll">
+
+    <div class="row" id="personal" style="justify-content: center; padding: 10px;">
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
         <div class="card">
           <div class="card-header">
             Featured
           </div>
           <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
                 <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
@@ -149,17 +156,155 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExampleOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByOne" aria-expanded="false" aria-controls="flush-collapseOneByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByOne" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByTwo" aria-expanded="false" aria-controls="flush-collapseOneByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByTwo" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByThree" aria-expanded="false" aria-controls="flush-collapseOneByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByThree" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByOne" aria-expanded="false" aria-controls="flush-collapseTwoByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByOne" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByTwo" aria-expanded="false" aria-controls="flush-collapseTwoByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByTwo" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByThree" aria-expanded="false" aria-controls="flush-collapseTwoByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByThree" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
         <div class="card">
           <div class="card-header">
             Featured
           </div>
           <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
                 <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
@@ -173,17 +318,74 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExampleThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByOne" aria-expanded="false" aria-controls="flush-collapseThreeByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByOne" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByTwo" aria-expanded="false" aria-controls="flush-collapseThreeByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByTwo" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByThree" aria-expanded="false" aria-controls="flush-collapseThreeByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByThree" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
         <div class="card">
           <div class="card-header">
             Featured
           </div>
           <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
                 <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
@@ -197,154 +399,1533 @@
             </div>
           </div>
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <div class="card-header">
-            Featured
-          </div>
-          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000">
-                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
         </div>
       </div>
+       
     </div>
+
+    <div class="row" id="hygiene" style="justify-content: center; padding: 10px;">
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByOne" aria-expanded="false" aria-controls="flush-collapseOneByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByOne" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByTwo" aria-expanded="false" aria-controls="flush-collapseOneByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByTwo" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByThree" aria-expanded="false" aria-controls="flush-collapseOneByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByThree" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByOne" aria-expanded="false" aria-controls="flush-collapseTwoByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByOne" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByTwo" aria-expanded="false" aria-controls="flush-collapseTwoByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByTwo" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByThree" aria-expanded="false" aria-controls="flush-collapseTwoByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByThree" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByOne" aria-expanded="false" aria-controls="flush-collapseThreeByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByOne" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByTwo" aria-expanded="false" aria-controls="flush-collapseThreeByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByTwo" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByThree" aria-expanded="false" aria-controls="flush-collapseThreeByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByThree" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+    overflow-y: scroll
+    <div class="row" id="herb" style="justify-content: center; padding: 10px;">
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByOne" aria-expanded="false" aria-controls="flush-collapseOneByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByOne" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByTwo" aria-expanded="false" aria-controls="flush-collapseOneByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByTwo" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByThree" aria-expanded="false" aria-controls="flush-collapseOneByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByThree" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByOne" aria-expanded="false" aria-controls="flush-collapseTwoByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByOne" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByTwo" aria-expanded="false" aria-controls="flush-collapseTwoByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByTwo" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByThree" aria-expanded="false" aria-controls="flush-collapseTwoByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByThree" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByOne" aria-expanded="false" aria-controls="flush-collapseThreeByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByOne" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByTwo" aria-expanded="false" aria-controls="flush-collapseThreeByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByTwo" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByThree" aria-expanded="false" aria-controls="flush-collapseThreeByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByThree" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+
+    <div class="row" id="cleaning" style="justify-content: center; padding: 10px;">
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByOne" aria-expanded="false" aria-controls="flush-collapseOneByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByOne" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByTwo" aria-expanded="false" aria-controls="flush-collapseOneByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByTwo" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByThree" aria-expanded="false" aria-controls="flush-collapseOneByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByThree" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByOne" aria-expanded="false" aria-controls="flush-collapseTwoByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByOne" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByTwo" aria-expanded="false" aria-controls="flush-collapseTwoByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByTwo" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByThree" aria-expanded="false" aria-controls="flush-collapseTwoByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByThree" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByOne" aria-expanded="false" aria-controls="flush-collapseThreeByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByOne" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByTwo" aria-expanded="false" aria-controls="flush-collapseThreeByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByTwo" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByThree" aria-expanded="false" aria-controls="flush-collapseThreeByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByThree" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+
+    <div class="row" id="other" style="justify-content: center; padding: 10px;">
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleOne">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByOne" aria-expanded="false" aria-controls="flush-collapseOneByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByOne" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByTwo" aria-expanded="false" aria-controls="flush-collapseOneByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByTwo" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOneByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneByThree" aria-expanded="false" aria-controls="flush-collapseOneByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseOneByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingOneByThree" data-bs-parent="#accordionFlushExampleOne">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByOne" aria-expanded="false" aria-controls="flush-collapseTwoByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByOne" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByTwo" aria-expanded="false" aria-controls="flush-collapseTwoByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByTwo" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwoByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwoByThree" aria-expanded="false" aria-controls="flush-collapseTwoByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseTwoByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwoByThree" data-bs-parent="#accordionFlushExampleTwo">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExampleThree">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByOne" aria-expanded="false" aria-controls="flush-collapseThreeByOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByOne" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByOne" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByTwo" aria-expanded="false" aria-controls="flush-collapseThreeByTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByTwo" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThreeByThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThreeByThree" aria-expanded="false" aria-controls="flush-collapseThreeByThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThreeByThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThreeByThree" data-bs-parent="#accordionFlushExampleThree">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3" style="padding-top: 10px;">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Mona's Choice
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Budget-friendly
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Most sustainable
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> This item is from <br><strong>"Name of Business"</strong>. <br> Go click their links.
+                    <hr>
+                  <a href=#><img src="alternative/icons/shopee.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/laz.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/fbpage.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/insta.png" class="store img-fluid" alt="shopee"></a>
+                  <a href=#><img src="alternative/icons/web.png" class="store img-fluid" alt="shopee"></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+
   </div>
 </div>
-<div class="d-sm-none">
+
+<div class="d-md-none">
 <div class="accordion accordion-flush" id="accordionFlushExample">
+
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
+       <div class="content flex-fill"> Personal Items</div>
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
       <div class="container">
-        <div class="row" style="justify-content: center; padding: 10px ;">
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-3">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
+    </div>
   </div>
-</div>
-</div>
-</div>     
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       <div class="content flex-fill"> Personal Items</div>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <div class="container">
+        
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       <div class="content flex-fill"> Personal Items</div>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <div class="container">
+        
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       <div class="content flex-fill"> Personal Items</div>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <div class="container">
+        
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       <div class="content flex-fill"> Personal Items</div>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+      <div class="container">
+        
+      </div>
+    </div>
+    </div>
+  </div>
 
 
-   
+</div>
+</div>    
+
+
+<div class="container text-center" >
+  <div class="row">
+    
+    <div class="col-6 col-md-3" style="padding: 0; margin:0">
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+            </div>
+          </div>
+        </div> 
+      </div>
+
+
+      <div class="col-6 col-md-3" style="padding: 0; margin:0">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+              </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="col-6 col-md-3" style="padding: 0; margin:0">
+          <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                </div>
+              </div>
+            </div> 
+          </div>
+
+          <div class="col-6 col-md-3" style="padding: 0; margin:0"  >
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="alternative/water bottle/3.png" class="img-fluid" alt="mineral water bottle">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="alternative/water bottle/2.png" class="img-fluid" alt="garbage water bottle">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="alternative/water bottle/1.png" class="img-fluid" alt="waste wate bottle">
+                  </div>
+                </div>
+              </div> 
+            </div>
+    </div>
+  </div>
+       
 
 
       <!-- Footer -->
