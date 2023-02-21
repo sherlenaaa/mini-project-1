@@ -185,6 +185,22 @@ a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+
+/* Hello */
+.containerone {
+  background-image: url(mp1/oranges.png);
+  padding: none;
+  margin: none;
+}
+
+.sub {
+  color: black;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 10vh;
+  background-color: rgba(255, 255, 255, 0.50);
+}
 /* Who Am I */
 
 .profilepic {
